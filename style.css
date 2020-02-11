@@ -1,0 +1,270 @@
+h1{
+    text-align: center;
+}.definitions{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#unitsDef{
+    margin: 10px;
+    padding: 10px;
+    border-bottom:1px solid black ;
+}
+
+.minHeight{
+    min-height: 200px;
+    border: 1px solid red;
+    margin: 10px;
+}
+.nonMinHeight{
+    border: 1px solid red;
+    margin: 10px;
+}
+.minMaxDef{
+    padding: 10px;
+    margin-left: 10px;
+}
+.minWidth{
+    min-width: 100px;
+    max-width: 400px;
+    background-color: yellow;
+    display: block;
+    
+    
+}
+.nonMinWidth{
+  background-color: red;
+}
+
+.minMaxSpecified{
+    background: yellowgreen;
+    max-width: 300px;
+    max-height: 1000px;
+}
+
+#unitsExample>div{
+    display: inline;
+}
+#viewportDef{
+    border: 1px solid black;
+    max-width: 400px;
+}
+.viewPortMin{
+    font-size: 5vmin;
+}
+.viewPortMax{
+    font-size: 5vmax;
+}
+#grad {
+    height: 500px;
+    background-image: linear-gradient(red, yellow);
+    border-left: 3px solid black;
+    border-right: 3px dashed green;
+    border-top:3px dotted purple;
+    border-bottom: 3px double blue;
+  }
+  #redDiv{  
+    position: absolute;
+    top:0;
+    left:30px;
+    z-index:1;
+    min-height: 100px;
+    min-width: 100px;
+    background-color: red;
+    text-align: center;
+  }
+  #yellowDiv{
+    min-height: 100px;
+    min-width: 100px;
+    background-color:yellow;
+    text-align: center;
+  }
+  #greenDiv{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:3;
+    min-height: 100px;
+    min-width: 100px;
+    background-color:green;
+    text-align: center;
+    
+}
+
+#blueDiv{
+    min-height: 100px;
+    min-width: 100px;
+    background-color:blue;
+    text-align: center;
+}
+.myclass{
+    margin: 0;
+    padding: 0;
+}
+.myclass ul{
+    list-style: none;
+    background-color: lightgray;
+}
+.myclass ul li{
+    display: inline-block;
+    padding: 15px;
+}
+
+.footerStyle{
+    position: absolute;
+    bottom: 0;
+    background: grey;
+    text-align: center;
+    margin-left: 600px;
+    color:white;
+    font-size: 20px;
+    padding: 10px;
+}
+.loginBody{
+    background-image: url('./form-background.jpg');
+}
+form { 
+    width:50%;
+    margin: auto;
+    border: 3px solid #f1f1f1;
+    background-color: white;
+}
+.loginForm{
+    padding: 16px; 
+   
+}
+label{
+    width: 100%;
+    margin-bottom: 10%;
+    margin-left: 10px;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: blue;
+    color: white;
+    padding: 14px 20px;
+    font-size: 16px;
+    border: none;
+    width: 100%;
+  }
+  
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+    align-content: center;
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: auto;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    border: 1px solid black;
+  }
+  .flexcontainer2{
+      display: flex;
+      align-content: flex-start;
+  }
+  .flex-container2 >span{
+      width: 150px;
+      padding:15px;
+      border: 1px solid black;
+      line-height: 75px;
+      font-size: 30px;
+      
+  }
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: [col] 50px [col] 30px [col] 80px [col] 90px  ;
+    grid-template-rows: [row] auto [row] auto [row] ;
+    background-color: #fff;
+    color: #444;
+    width: 40%;
+    margin: auto;
+}
+
+.box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+
+}
+
+.a {
+    grid-column: col/ span 2;
+    grid-row: row ;
+}
+.b {
+    grid-column: col 3 / span 2 ;
+    grid-row: row ;
+}
+.c {
+    grid-column: col ;
+    grid-row: row 2 ;
+}
+.d {
+    grid-column: col 2 / span 3 ;
+    grid-row: row 2 ;
+}
+
+.e {
+    grid-column: col / span 4;
+    grid-row: row 3;
+}
+.gridcontainer{
+display: grid;
+grid-template-columns: auto auto auto;
+background-color:white;
+color: black;
+padding: 10px;
+width: 40%;
+margin: auto;
+}
+.item{
+    border-bottom: 1px solid lightgray;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+@media (max-width:1000px){
+    .myclass .mediaQueries ul li{
+        display: block;
+        padding: 15px;
+      ;
+    }
+    .myclass .mediaQueries ul{
+        list-style: none;
+    }
+}
+.ball{
+    margin: auto;
+    background-color: blue;
+    border-radius: 50%;
+    width:100px;
+    height:100px;
+    animation: bounce 0.5s; 
+    animation-direction: alternate; 
+    animation-timing-function: cubic-bezier(.5, 0.05, 1, .5); 
+    animation-iteration-count: 6;
+}
+@keyframes bounce { 
+    from { 
+        transform: translate3d(0, 0, 0); 
+    } 
+    to { 
+        transform: translate3d(0, 200px, 0); 
+    } 
+}
